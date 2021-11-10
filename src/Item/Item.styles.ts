@@ -25,4 +25,24 @@ export const Wrapper = styled.div`
         padding: 1rem;
         height: 100%;
     }
+    .discription-close{
+        white-space: unset;
+        overflow: unset;
+        text-overflow: unset;
+    }
+    .discription-open{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .see-more{
+        border: none;
+        background-color: transparent;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color: blue;
+        padding: 0;
+    }
 `;
