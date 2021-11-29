@@ -1,4 +1,4 @@
-import CartItem from "../CartItem/CartItem.";
+import CartItem from "../CartItem/CartItem";
 //styles
 import { Wrapper } from "./Cart.styles";
 //types

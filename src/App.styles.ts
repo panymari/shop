@@ -2,12 +2,28 @@ import styled from 'styled-components';
 import IconButton from '@material-ui/core/IconButton';
 
 export const Wrapper = styled.div`
-    margin: 40px;
+    .show{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
+    .products{
+        margin: 80px;
+    }
 `;
 
 export const StyledButton = styled(IconButton)`
-    position: fixed;
-    z-index: 100;
-    right: 20px;
-    top: 20px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    :hover{
+        opacity: 80%;
+    }
+`;
+
+export const Toolbar = styled.div`
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
 `;

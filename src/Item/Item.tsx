@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import { CartItemType } from '../App';
 //styles
 import { Wrapper } from './Item.styles';
+
 import React, { useState } from 'react';
 
 type Props = {
@@ -21,7 +22,7 @@ const Item: React.FC<Props> = ({ item, handleAddToCart}) => {
         <div>
             <h3>{item.title}</h3>
             <p className={open ? 'discription-close' : 'discription-open'}>{item.description}</p>
-            <button type="button" className="see-more" onClick={seeMoreOrLess}>See more</button>
+            <Button type="button" className="see-more" onClick={seeMoreOrLess}>See more</Button>
             <h3>${item.price}</h3>
         </div>
         <Button onClick={() => handleAddToCart(item)}>Add to cart</Button>
