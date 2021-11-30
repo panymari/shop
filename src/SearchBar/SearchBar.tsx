@@ -43,7 +43,6 @@ const Header: React.FC<Props> = ({ placeholder, data, filteredData, setFilteredD
       clearInput(); 
       setTimeout(() => { seeAll() }, 1000);
     }
-  
     return (
       <Wrapper>
         <div className="search-inputs">
@@ -65,7 +64,7 @@ const Header: React.FC<Props> = ({ placeholder, data, filteredData, setFilteredD
           <div className="data-result">
             {filteredData.slice(0, 15).map((value: CartItemType) => {
               return (
-                  <p>{value.title}</p>
+                  <div className="hint" onClick={e=>setWordEntered(value.title)}>{value.title}</div>
               );
             })}
           </div>

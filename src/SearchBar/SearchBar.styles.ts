@@ -26,6 +26,15 @@ export const Wrapper = styled.div`
         font-size: 20px;
         font-family:  Arial, Helvetica, sans-serif;
     }
+    .hint{
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family:  Arial, Helvetica, sans-serif;
+        :hover{
+            background-color: #b377ff;
+        }
+    }
 `;
 export const Input = styled.input`
     font-size: 20px;
